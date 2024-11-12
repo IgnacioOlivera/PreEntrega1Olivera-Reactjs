@@ -1,15 +1,20 @@
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
-import NavBar from "./components/NavBar/NavBar"
 
+import { useState } from "react";
+import { ProductList } from "./components/ProductList";
 
 function App() {
+  const [ count, setCount] = useState(0);
+
+
   return (
-    <>
-      <NavBar />
-      <ItemListContainer />
+    <div className="App">
+      <h1>WhiakyPedia</h1>
+
      
-    </>
-  )
+      <ProductList />
+      
+    </div>
+  );
 }
 
-export default App
+export default App;
